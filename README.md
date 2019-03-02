@@ -15,7 +15,7 @@ Allow building official TianoCore EDK2 with Visual Studio 2017
 * Make a new Property Sheet and add user macros PROJECT_FILES, BUILD_TARGET, TARGET_ARCH,...
 * Make an INF for the project and link it to MdePkg, MdeModulePkg,... or custom one
 * Build / Build Solution
-* If you want to run it on QEMU just copy Debugging configuration from Shell project, and modify it as you want
+* If you want to run it on QEMU just copy Debugging configuration from Shell project, and modify it as you want (the 1st agrument if the path to output EFI, and the second is PLATFORM_ARCH
 
 # Credit
 * [@TianoCore](https://github.com/tianocore) for EDK2
