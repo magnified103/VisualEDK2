@@ -2,12 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <TARGET_ARCH>X64</TARGET_ARCH>
+    <TARGET_ARCH>ARM</TARGET_ARCH>
     <BUILD_TARGET>RELEASE</BUILD_TARGET>
   </PropertyGroup>
-  <PropertyGroup>
-    <_PropertySheetDisplayName>x64ReleaseMacros</_PropertySheetDisplayName>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup />
   <ItemGroup>
     <BuildMacro Include="TARGET_ARCH">
