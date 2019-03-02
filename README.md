@@ -18,7 +18,7 @@ Allow building official TianoCore EDK2 with Visual Studio 2017
 * If you want to run it on QEMU just copy Debugging configuration from Shell project, and modify it as you want
 
 # Credit
-* @TianoCore for EDK2
-* @pbatard for debug.vbs
-* @dung11112003
+* [@TianoCore](https://github.com/tianocore) for EDK2
+* [@pbatard](https://github.com/pbatard) for debug.vbs
+* [@dung11112003](https://github.com/dung11112003)
 
