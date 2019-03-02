@@ -81,9 +81,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeOutput>VisualEDK2.exe</NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <NMakeBuildCommandLine>cd $(WORKSPACE)
-call edksetup.bat rebuild
-build -a IA32 -b RELEASE -t $(TOOLCHAIN)</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>
+    </NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set "WORKSPACE=$(SolutionDir)edk2"
 set "NASM_PREFIX=C:\Program Files\NASM\"
 cd /D %WORKSPACE%
