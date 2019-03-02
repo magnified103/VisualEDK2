@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <PLATFORM_NAME>NT32</PLATFORM_NAME>
+    <PLATFORM_FILE>Nt32Pkg/Nt32Pkg.dsc</PLATFORM_FILE>
+    <PLATFORM_GUID>EB216561-961F-47EE-9EF9-CA426EF547C2</PLATFORM_GUID>
+    <OUTPUT_DIRECTORY>Build/NT32$(TARGET_ARCH)</OUTPUT_DIRECTORY>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="PLATFORM_NAME">
+      <Value>$(PLATFORM_NAME)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PLATFORM_FILE">
+      <Value>$(PLATFORM_FILE)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PLATFORM_GUID">
+      <Value>$(PLATFORM_GUID)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="OUTPUT_DIRECTORY">
+      <Value>$(OUTPUT_DIRECTORY)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
