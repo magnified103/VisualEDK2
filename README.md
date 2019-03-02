@@ -1,7 +1,7 @@
 # VisualEDK2
 Allow building official TianoCore EDK2 with Visual Studio 2017
 
-# How to install
+# How to build
 
 * Download (or clone) this repo and submodules
 * Open the *.sln file
