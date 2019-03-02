@@ -10,7 +10,14 @@
     <_PropertySheetDisplayName>GlobalMacros</_PropertySheetDisplayName>
     <NMakeBuildCommandLine>cd $(WORKSPACE)
 call edksetup.bat rebuild
-build -a $(TARGETARCH) -b $(BUILDTARGET) -t $(TOOLCHAIN)</NMakeBuildCommandLine>
+build -a $(TARGETARCH) -p $(PLATFORMFILE) -b $(BUILDTARGET) -t $(TOOLCHAIN)</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>cd $(WORKSPACE)
+call edksetup.bat rebuild
+build -a $(TARGETARCH) -p $(PLATFORMFILE) -b $(BUILDTARGET) -t $(TOOLCHAIN) clean
+build -a $(TARGETARCH) -p $(PLATFORMFILE) -b $(BUILDTARGET) -t $(TOOLCHAIN)</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>cd $(WORKSPACE)
+call edksetup.bat rebuild
+build -a $(TARGETARCH) -p $(PLATFORMFILE) -b $(BUILDTARGET) -t $(TOOLCHAIN) clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemGroup>

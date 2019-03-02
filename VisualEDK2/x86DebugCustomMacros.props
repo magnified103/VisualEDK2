@@ -4,6 +4,7 @@
   <PropertyGroup Label="UserMacros">
     <TARGETARCH>IA32</TARGETARCH>
     <BUILDTARGET>DEBUG</BUILDTARGET>
+    <PLATFORMFILE>Nt32Pkg/Nt32Pkg.dsc</PLATFORMFILE>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
@@ -14,6 +15,10 @@
     </BuildMacro>
     <BuildMacro Include="BUILDTARGET">
       <Value>$(BUILDTARGET)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PLATFORMFILE">
+      <Value>$(PLATFORMFILE)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

@@ -3,6 +3,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <TARGETARCH>IA32</TARGETARCH>
+    <PLATFORMFILE>Nt32Pkg/Nt32Pkg.dsc</PLATFORMFILE>
     <BUILDTARGET>RELEASE</BUILDTARGET>
   </PropertyGroup>
   <PropertyGroup />
@@ -10,6 +11,10 @@
   <ItemGroup>
     <BuildMacro Include="TARGETARCH">
       <Value>$(TARGETARCH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PLATFORMFILE">
+      <Value>$(PLATFORMFILE)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="BUILDTARGET">
