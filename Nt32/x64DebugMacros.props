@@ -2,23 +2,25 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <TARGETARCH>IA32</TARGETARCH>
-    <PLATFORMFILE>Nt32Pkg/Nt32Pkg.dsc</PLATFORMFILE>
-    <BUILDTARGET>RELEASE</BUILDTARGET>
+    <TARGET_ARCH>X64</TARGET_ARCH>
+    <PLATFORM_FILE>Nt32Pkg/Nt32Pkg.dsc</PLATFORM_FILE>
+    <BUILD_TARGET>DEBUG</BUILD_TARGET>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>x64DebugMacros</_PropertySheetDisplayName>
+  </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemGroup>
-    <BuildMacro Include="TARGETARCH">
-      <Value>$(TARGETARCH)</Value>
+    <BuildMacro Include="TARGET_ARCH">
+      <Value>$(TARGET_ARCH)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
-    <BuildMacro Include="PLATFORMFILE">
-      <Value>$(PLATFORMFILE)</Value>
+    <BuildMacro Include="PLATFORM_FILE">
+      <Value>$(PLATFORM_FILE)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
-    <BuildMacro Include="BUILDTARGET">
-      <Value>$(BUILDTARGET)</Value>
+    <BuildMacro Include="BUILD_TARGET">
+      <Value>$(BUILD_TARGET)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
