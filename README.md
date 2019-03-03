@@ -1,7 +1,7 @@
 # VisualEDK2
 Allow building official TianoCore EDK2 with Visual Studio 2017
 
-# How to install
+# How to build
 
 * Download (or clone) this repo and submodules
 * Open the *.sln file
@@ -13,9 +13,9 @@ Allow building official TianoCore EDK2 with Visual Studio 2017
 * Make a Makefile project
 * Apply GlobalMacros.props to the project
 * Make a new Property Sheet and add user macros PROJECT_FILES, BUILD_TARGET, TARGET_ARCH,...
-* Make an INF for the project and link it to MdePkg, MdeModulePkg,... or custom one
+* Make an INF for the project and link it to MdePkg, MdeModulePkg,... or make a custom platform one. This is [official tutorial](https://github.com/tianocore/tianocore.github.io/wiki/Getting-Started-Writing-Simple-Application) from TianoCore
 * Build / Build Solution
-* If you want to run it on QEMU just copy Debugging configuration from Shell project, and modify it as you want
+* If you want to run it on QEMU just copy Debugging configuration from Shell project, and modify it as you want (the 1st agrument if the path to output EFI, and the second is PLATFORM_ARCH
 
 # Credit
 * [@TianoCore](https://github.com/tianocore) for EDK2
