@@ -1,5 +1,6 @@
 # VisualEDK2
-Allow building official TianoCore EDK2 with Visual Studio 2017
+Allow building official TianoCore EDK2 with Visual Studio 2017.
+Include QEMU + OVMF virtual machine for testing.
 
 # How to build
 
