@@ -109,13 +109,11 @@ namespace Debugger
                 return;
             }
 
-            ProcessStartInfo process = new ProcessStartInfo();
-            process.FileName = Environment.GetEnvironmentVariable("COMSPEC");
-            process.Arguments = "/c mkdir \"image\\efi\\boot\"";
-            Process.Start(process);
+            Directory.CreateDirectory(@"image\efi\boot");
 
             File.Copy(args[1], "image\\efi\\boot\\" + BOOT_NAME, true);
 
+            ProcessStartInfo process = new ProcessStartInfo();
             process.FileName = QEMU_PATH + QEMU_EXE;
             process.Arguments = QEMU_OPTS + " -L . -bios " + FW_FILE + " -hda fat:rw:image";
             Process.Start(process);
