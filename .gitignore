@@ -262,4 +262,7 @@ __pycache__/
 
 # QEMU temp folder
 image/
-*.fd
+/*.fd
+/*.exe
+/*.config
+/*.pdb
